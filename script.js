@@ -15,7 +15,7 @@ if (birthYear < 1965) {
 } else if (birthYear > 1965) {
   let clientAge = 2023 - birthYear;
   let randomNumber = Math.floor(Math.random() * 7) + 1;
-  firstDigit = age / randomNumber;
+  firstDigit = clientAge / randomNumber;
   if (firstDigit % 2 === 0) {
     firstDigit += 1;
   }
