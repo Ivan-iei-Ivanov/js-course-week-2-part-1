@@ -1,4 +1,4 @@
-my initial solution
+// my initial solution
 
 var firstDigit   = 0;
 var secondDigit  = 0;
@@ -39,10 +39,10 @@ if (clientGender === "male"){
     } while (randomNumberForGender != 1 && 3);
 }
 
-конфигурационни константи
+// конфигурационни константи
 
-годината спрямо която определяме, 
-какъв ще бъде типът на потребителя
+// годината спрямо която определяме, 
+// какъв ще бъде типът на потребителя
 
 
 
@@ -103,4 +103,26 @@ function generateThirdDigit(customerAge, motherBirthYear, fatherBirthYear) {
       }
   }
   return thirdDigit;
+}
+function generateFourthDigit(height, weight) {
+  let bmi = weight / ((height / 100) ** 2);
+  let fourthDigit = 0;
+  if (bmi < 16) {
+      fourthDigit = 1;
+  } else if (bmi >= 16 && bmi < 17) {
+      fourthDigit = 2;
+  } else if (bmi >= 17 && bmi < 18.5) {
+      fourthDigit = 3;
+  } else if (bmi >= 18.5 && bmi < 25) {
+      fourthDigit = 4;
+  } else if (bmi >= 25 && bmi < 30) {
+      fourthDigit = 5;
+  } else if (bmi >= 30 && bmi < 35) {
+      fourthDigit = 6;
+  } else if (bmi >= 35 && bmi < 40) {
+      fourthDigit = 7;
+  } else if (bmi >= 40) {
+      fourthDigit = 8;
+  }
+  return fourthDigit;
 }
